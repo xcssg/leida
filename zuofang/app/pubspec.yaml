@@ -1,0 +1,20 @@
+name: zuofang_app
+description: ZUOFANG 客户端 —— 本地游戏流量转发与抓包（Flutter + Rust TUN 引擎）
+publish_to: "none"
+version: 0.4.2+19
+
+environment:
+  sdk: ">=3.4.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^1.2.2
+  web_socket_channel: ^3.0.1
+  flutter_secure_storage: ^9.2.2
+
+dev_dependencies:
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true

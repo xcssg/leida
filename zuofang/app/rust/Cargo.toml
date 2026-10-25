@@ -1,0 +1,27 @@
+[package]
+name = "zuofang_native"
+version = "0.4.2"
+edition = "2021"
+description = "ZUOFANG 仿制版原生隧道引擎（TUN + TGCP）"
+
+[lib]
+name = "zuofang_native"
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+jni = "0.21"
+libc = "0.2"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+sha2 = "0.10"
+hmac = "0.12"
+rand = "0.8"
+x25519-dalek = { version = "2", features = ["static_secrets"] }
+base64 = "0.22"
+
+[profile.release]
+opt-level = "z"
+lto = true
+codegen-units = 1
+strip = true
+panic = "abort"
