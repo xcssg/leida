@@ -1,4 +1,0 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
-    <!-- Flutter debug 变体：允许明文 HTTP 到本地后端 -->
-    <uses-permission android:name="android.permission.INTERNET" />
-</manifest>
